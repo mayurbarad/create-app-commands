@@ -68,5 +68,9 @@ postgresql://postgres:mysecretpassword@localhost:5432/postgres
 ## psql - let's you connect and put data
 `psql` is a terminal-based front-end to PostgreSQL. It provides command-line interface to the PostgreSQL db.
 ```bash
+docker exec -it <container_id> /bin/bash
+```
+Then
+```bash
 psql -h localhost -d postgres -U postgres
 ```
